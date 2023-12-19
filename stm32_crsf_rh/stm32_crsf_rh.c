@@ -1,5 +1,3 @@
-// https://github.com/boris-gu/ArduCRSF-RH/blob/master/src/arducrsf_rh.cpp
-
 #include "stm32_crsf_rh.h"
 
 
