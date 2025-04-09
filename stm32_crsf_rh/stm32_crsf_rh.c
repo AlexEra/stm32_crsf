@@ -30,9 +30,9 @@ static uint8_t crc8_calc(uint8_t *p_buf, size_t len) {
     return result;
 }
 
-HAL_StatusTypeDef send_rc_channels(UART_HandleTypeDef *p_uart, crsf_rc_channels_t *p_channels) {
-    crsf_default_t tx;
+crsf_default_t tx;
 
+HAL_StatusTypeDef send_rc_channels(UART_HandleTypeDef *p_uart, crsf_rc_channels_t *p_channels) {
     tx.dest = CRSF_ADDRESS_CRSF_TRANSMITTER;
     tx.len = 26;
     tx.type = CRSF_FRAMETYPE_RC_CHANNELS;
